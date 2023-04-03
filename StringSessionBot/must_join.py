@@ -19,14 +19,14 @@ async def must_join_channel(bot: Client, msg: Message):
                 link = chat_info.invite_link
             try:
                 await msg.reply(
-                    f"You must join [this channel]({link}) to use me. After joining try again !",
+                    f"𝔜𝔬𝔲 𝔪𝔲𝔰𝔱 𝔧𝔬𝔦𝔫 [𝔐𝔶]({link}) 𝔤𝔯𝔬𝔲𝔭 𝔱𝔬 𝔲𝔰𝔢 𝔪𝔢. 𝔄𝔣𝔱𝔢𝔯 𝔧𝔬𝔦𝔫𝔦𝔫𝔤 𝔱𝔯𝔶 𝔞𝔤𝔞𝔦𝔫 !",
                     disable_web_page_preview=True,
                     reply_markup=InlineKeyboardMarkup([
-                        [InlineKeyboardButton("✨ Join Channel ✨", url=link)]
+                        [InlineKeyboardButton("✨ 𝔍𝔬𝔦𝔫 ✨", url=link)]
                     ])
                 )
                 await msg.stop_propagation()
             except ChatWriteForbidden:
                 pass
     except ChatAdminRequired:
-        print(f"I'm not admin in the MUST_JOIN chat : {MUST_JOIN} !")
+        print(f"ℑ'𝔪 𝔫𝔬𝔱 𝔞𝔡𝔪𝔦𝔫 𝔦𝔫 𝔱𝔥𝔢 MUST_JOIN 𝔠𝔥𝔞𝔱 : {MUST_JOIN} !")
