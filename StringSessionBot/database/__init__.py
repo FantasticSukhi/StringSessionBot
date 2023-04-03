@@ -9,7 +9,7 @@ def start() -> scoped_session:
     if DATABASE_URL == "":
         if count_ < 1:
             count += 1
-            return print("Database url not provided..\nBut this time I won't stop 😉")
+            return print("𝔇𝔞𝔱𝔞𝔟𝔞𝔰𝔢 𝔲𝔯𝔩 𝔫𝔬𝔱 𝔭𝔯𝔬𝔳𝔦𝔡𝔢𝔡..\n𝔅𝔲𝔱 𝔱𝔥𝔦𝔰 𝔱𝔦𝔪𝔢 ℑ 𝔴𝔬𝔫'𝔱 𝔰𝔱𝔬𝔭 😉")
         return
     engine = create_engine(DATABASE_URL)
     BASE.metadata.bind = engine
